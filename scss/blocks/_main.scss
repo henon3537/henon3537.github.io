@@ -1,0 +1,11 @@
+@use '../core/variables';
+
+.main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 16px 38px;
+
+    @include variables.mq(md) {
+        padding: 40px 24px 54px;
+    }
+}

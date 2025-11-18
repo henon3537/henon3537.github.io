@@ -1,0 +1,98 @@
+@use '../core/variables';
+
+.achievements {
+    background-color: #ffffff;
+    padding: 24px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+    @include variables.mq(md) {
+        padding: 32px 32px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        font-size: 18px;
+        border-left: 4px solid #64b5f6;
+        padding-left: 10px;
+
+        @include variables.mq(md) {
+            font-size: 20px;
+        }
+    }
+
+    &__project {
+        padding: 0 10px;
+        border-radius: 8px;
+        margin: 0 0 30px;
+
+        @include variables.mq(md) {
+            margin: 0 0 40px;
+        }
+    }
+
+    &__project-title {
+        margin-bottom: 8px;
+        font-size: 17px;
+        font-weight: 600;
+
+        @include variables.mq(md) {
+            font-size: 18px;
+        }
+    }
+
+    &__project-contents {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 10px;
+    }
+
+    &__project-image {
+        display: inline-block;
+        width: 100%;
+
+        @include variables.mq(sm) {
+            width: 300px;
+            height: auto;
+        }
+    }
+
+    &__project-link {
+        display: inline-block;
+        margin-right: 12px;
+        margin-bottom: 4px;
+        font-size: 14px;
+    }
+
+    &__project-tech {
+        margin: 4px 0 8px;
+        font-size: 14px;
+        color: #555555;
+    }
+
+    &__project-label {
+        margin: 12px 0 4px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    &__project-points {
+        padding-left: 18px;
+        list-style: disc;
+    }
+
+    &__project-point {
+        font-size: 14px;
+        margin-bottom: 4px;
+
+        @include variables.mq(md) {
+            font-size: 15px;
+        }
+    }
+
+    &__other {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+}
